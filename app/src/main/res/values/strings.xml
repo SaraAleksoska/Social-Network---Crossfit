@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CrossFit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_activity">Choose Type of Activity</string>
+    <string-array name="types">
+        <item>Gymnastics</item>
+        <item>Weightlifting</item>
+        <item>Cardio</item>
+    </string-array>
+</resources>
