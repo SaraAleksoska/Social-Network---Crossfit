@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back1"
+    tools:context=".AddPostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pTitleEt"
+            android:background="@drawable/editextstyle"
+            android:padding="10dp"
+            android:hint="Enter title"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pImageIv"
+            android:src="@drawable/ic_baseline_add_photo_alternate_24"
+            android:background="@color/back1"
+            android:minHeight="200dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pDescriptionEt"
+            android:background="@drawable/editextstyle"
+            android:padding="10dp"
+            android:hint="Enter description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="120dp"
+            android:gravity="start"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_gravity="end"
+            android:id="@+id/pUploadBtn"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
