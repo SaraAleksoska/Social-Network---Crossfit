@@ -131,16 +131,6 @@
                 android:id="@+id/commentBtn"
                 android:padding="5dp"
                 android:drawableLeft="@drawable/ic_comment_black"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="SHARE"
-                android:layout_margin="5dp"
-                android:padding="5dp"
-                android:background="@null"
-                android:id="@+id/shareBtn"
-                android:drawableLeft="@drawable/ic_share_black"/>
 
         </LinearLayout>
 
