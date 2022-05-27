@@ -58,7 +58,7 @@ public class PostDetailActivity extends AppCompatActivity {
     ImageView uPictureIv, pImageIv;
     TextView nameTv, pTimeTIv, pTitleTv, pDescriptionTv, pLikesTv, pCommentsTv;
     ImageButton moreBtn;
-    Button likeBtn, shareBtn;
+    Button likeBtn;
     LinearLayout profileLayout;
     RecyclerView recyclerView;
 
@@ -99,7 +99,6 @@ public class PostDetailActivity extends AppCompatActivity {
         moreBtn = findViewById(R.id.moreBtn);
 
         likeBtn = findViewById(R.id.likeBtn);
-        shareBtn = findViewById(R.id.shareBtn);
 
         profileLayout = findViewById(R.id.profileLayout);
         recyclerView = findViewById(R.id.recyclerView);
@@ -140,24 +139,6 @@ public class PostDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showMoreOptions();
-            }
-        });
-
-        shareBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String pTitle = pTitleTv.getText().toString().trim();
-                String pDescription = pDescriptionTv.getText().toString().trim();
-
-                BitmapDrawable bitmapDrawable = (BitmapDrawable) pImageIv.getDrawable();
-                if(bitmapDrawable == null)
-                {
-                    shareTextOnly(pTitle, pDescription);
-                }
-                else {
-                    Bitmap bitmap = bitmapDrawable.getBitmap();
-                    shareImageAndText(pTitle,pDescription,bitmap);
-                }
             }
         });
 

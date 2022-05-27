@@ -6,7 +6,7 @@ public class ModelTarget {
     public ModelTarget() {
     }
 
-    public ModelTarget(String typeA, String descA, String startdate, String own, String state, String ownName, String enddate) {
+    public ModelTarget(String typeA, String descA, String startdate, String own) {
         this.typeA = typeA;
         this.descA = descA;
         this.startdate = startdate;
