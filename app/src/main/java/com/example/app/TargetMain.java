@@ -84,4 +84,10 @@ public class TargetMain extends AppCompatActivity implements View.OnClickListene
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
+
 }
